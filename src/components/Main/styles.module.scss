@@ -1,0 +1,57 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .main {
+        width: 330px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        background: white;
+        padding-bottom: 5rem;
+
+        > img {
+            width: 100%;
+        }
+
+        h2 {
+            margin: 1rem 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.5rem;
+            padding: 0 1rem 4rem;
+        }
+
+        .one {
+            width: 330px;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                padding: 0;
+                position: relative;
+                text-align: left;
+                top: -65px;
+                left: 10px;
+                font-size: 26px;
+                color: white;
+                text-transform: uppercase;
+                height: 50px;
+            }
+
+            button {
+                margin-top: -1rem;
+                background: transparent;
+                border: 1.5px solid black;
+                padding: .6rem 2.5rem;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

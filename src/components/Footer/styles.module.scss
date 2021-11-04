@@ -1,0 +1,31 @@
+.wrapper {
+    
+    display: flex;
+    justify-content: center;
+    
+    > div {
+        background: hsl(0, 0%, 0%);
+        width: 330px;
+        text-align: center;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+
+        > img {
+            margin: 2.5rem 0 1rem;
+        }
+
+        li {
+            margin: .5rem 0;
+        }
+
+        div {
+            img {
+                margin: 1rem .5rem;
+            }
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
