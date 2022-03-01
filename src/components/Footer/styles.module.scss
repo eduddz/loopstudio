@@ -1,31 +1,59 @@
-.wrapper {
-    
+@import '../../styles//variables.scss';
+
+.footer {
+    background: $Black;
+    color: $White;
+    padding: 3rem 0;
     display: flex;
-    justify-content: center;
-    
-    > div {
-        background: hsl(0, 0%, 0%);
-        width: 330px;
-        text-align: center;
-        color: white;
-        font-family: 'Josefin Sans', sans-serif;
 
-        > img {
-            margin: 2.5rem 0 1rem;
+    @include breakpoint {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    &_left {
+        img {
+            width: 150px;
+            margin-bottom: 1rem;
+            cursor: pointer;
         }
 
-        li {
-            margin: .5rem 0;
-        }
-
-        div {
-            img {
-                margin: 1rem .5rem;
+        ul {
+            @include breakpoint {
+                display: flex;
             }
         }
 
-        p {
-            margin-bottom: 1rem;
+        li {
+            cursor: pointer;
+            text-align: center;
+            margin: 1rem 0;
+
+            @include breakpoint {
+                margin: 0 10px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &_right {
+        div {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            @include breakpoint {
+                justify-content: right;
+            }
         }
     }
 }

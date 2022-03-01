@@ -1,17 +1,13 @@
+import c from './styles.module.scss';
 
-import logoImg from '../../assets/logo.svg';
-import facebookImg from '../../assets/icon-facebook.svg';
-import twitterImg from '../../assets/icon-twitter.svg';
-import pinterestImg from '../../assets/icon-pinterest.svg';
-import instragramImg from '../../assets/icon-instagram.svg';
+import logo from '../../images/logo.svg';
+import { BsFacebook, BsTwitter, BsPinterest, BsInstagram } from 'react-icons/bs';
 
-import styles from './styles.module.scss';
-
-export function Footer() {
+export const Footer = () => {
     return (
-        <footer className={styles.wrapper}>
-            <div>
-                <img src={logoImg} alt="loopstudios" />
+        <footer className={c.footer}>
+            <div className={c.footer_left}>
+                <img src={logo} alt='logo' />
                 <ul>
                     <li>About</li>
                     <li>Careers</li>
@@ -19,13 +15,15 @@ export function Footer() {
                     <li>Products</li>
                     <li>Support</li>
                 </ul>
+            </div>
+            <div className={c.footer_right}>
                 <div>
-                    <img src={facebookImg} alt="facebook icon" />
-                    <img src={twitterImg} alt="twitter icon" />
-                    <img src={pinterestImg} alt="pinterest icon" />
-                    <img src={instragramImg} alt="instagram icon" />
+                    <BsFacebook color='white' />
+                    <BsTwitter color='white' />
+                    <BsPinterest color='white' />
+                    <BsInstagram color='white' />
                 </div>
-                <p>&copy; 2021 loopstudios. All rights reserved.</p>
+                <p>@ 2021 Loopstudios. All rights reserved.</p>
             </div>
         </footer>
     )
